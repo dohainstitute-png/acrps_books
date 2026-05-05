@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كتب المركز العربي - منصات التواصل الاجتماعي</title>
+    
+    <!-- تضمين مكتبة Tailwind CSS للتصميم -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- تضمين مكتبة FontAwesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- إعدادات إضافية للتصميم -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap');
+        body {
+            font-family: 'Tajawal', sans-serif;
+            /* خلفية متدرجة أنيقة */
+            background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+        }
+        
+        /* تأثيرات حركية عند التحويم على الروابط */
+        .social-link {
+            transition: all 0.3s ease;
+        }
+        .social-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        
+        /* تأثيرات خاصة بكل منصة عند التحويم */
+        .link-facebook:hover {
+            background-color: #1877F2;
+            color: white;
+            border-color: #1877F2;
+        }
+        .link-x:hover {
+            background-color: #000000;
+            color: white;
+            border-color: #000000;
+        }
+        .link-instagram:hover {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            color: white;
+            border-color: transparent;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <!-- الحاوية الرئيسية للبطاقة -->
+    <div class="bg-white w-full max-w-md rounded-3xl shadow-xl overflow-hidden p-8 border border-gray-100">
+        
+        <!-- قسم صورة البروفايل -->
+        <div class="flex justify-center relative">
+            <div class="w-32 h-32 rounded-full p-1 bg-gradient-to-tr from-gray-300 to-gray-100 shadow-md">
+                <img 
+                    src="https://scontent.fdoh9-1.fna.fbcdn.net/v/t39.30808-6/688347952_26892547023732246_3068015957053943412_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=MAar9dO4xgYQ7kNvwFlIhuH&_nc_oc=Adp37f4HXz2EZweSRpsqD4Gwxrxm0pIqD_oxw30jSkda140FM4_484X0elbcq1j6tMY&_nc_zt=23&_nc_ht=scontent.fdoh9-1.fna&_nc_gid=kp6y-kWLnCIaOy1E1tEkcA&_nc_ss=7a2a8&oh=00_Af56azdcF3yNf_tP2uxkuoE71rzIsvioP3GTsfUVWmyA2A&oe=69FE85C4" 
+                    alt="صورة بروفايل كتب المركز العربي" 
+                    class="w-full h-full rounded-full object-cover border-2 border-white"
+                >
+            </div>
+        </div>
+
+        <!-- النصوص والوصف -->
+        <div class="text-center mt-5 mb-8">
+            <h1 class="text-2xl font-bold text-gray-800 mb-2">كتب المركز العربي</h1>
+            <p class="text-gray-500 text-sm font-medium">تابعونا على منصات التواصل الاجتماعي ليصلكم جديد إصداراتنا</p>
+        </div>
+
+        <!-- أزرار روابط المنصات -->
+        <div class="space-y-4">
+            
+            <!-- زر فيسبوك -->
+            <a href="https://www.facebook.com/profile.php?id=61589264459107" target="_blank" rel="noopener noreferrer" 
+               class="social-link link-facebook flex items-center p-4 bg-blue-50 text-blue-700 rounded-2xl border border-blue-100 group">
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-white bg-opacity-50 group-hover:bg-opacity-20 ml-4">
+                    <i class="fa-brands fa-facebook-f text-2xl"></i>
+                </div>
+                <span class="font-bold text-lg">فيسبوك</span>
+                <i class="fa-solid fa-chevron-left mr-auto text-sm opacity-50 group-hover:opacity-100 group-hover:-translate-x-1 transition-all"></i>
+            </a>
+
+            <!-- زر إكس (تويتر سابقاً) -->
+            <a href="https://x.com/acrps_books" target="_blank" rel="noopener noreferrer" 
+               class="social-link link-x flex items-center p-4 bg-gray-50 text-gray-800 rounded-2xl border border-gray-200 group">
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-white bg-opacity-80 group-hover:bg-opacity-20 ml-4">
+                    <i class="fa-brands fa-x-twitter text-2xl"></i>
+                </div>
+                <span class="font-bold text-lg">إكس (تويتر)</span>
+                <i class="fa-solid fa-chevron-left mr-auto text-sm opacity-50 group-hover:opacity-100 group-hover:-translate-x-1 transition-all"></i>
+            </a>
+
+            <!-- زر إنستغرام -->
+            <a href="https://instagram.com/acrps_books" target="_blank" rel="noopener noreferrer" 
+               class="social-link link-instagram flex items-center p-4 bg-pink-50 text-pink-600 rounded-2xl border border-pink-100 group">
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-white bg-opacity-60 group-hover:bg-opacity-20 ml-4">
+                    <i class="fa-brands fa-instagram text-2xl"></i>
+                </div>
+                <span class="font-bold text-lg">إنستغرام</span>
+                <i class="fa-solid fa-chevron-left mr-auto text-sm opacity-50 group-hover:opacity-100 group-hover:-translate-x-1 transition-all"></i>
+            </a>
+
+        </div>
+
+        <!-- تذييل الصفحة -->
+        <div class="mt-10 text-center">
+            <p class="text-xs text-gray-400">© 2026 المركز العربي للأبحاث ودراسة السياسات</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
